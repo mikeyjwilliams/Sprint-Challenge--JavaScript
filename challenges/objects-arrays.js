@@ -257,9 +257,6 @@ The zoos need to know their total animal population across the United States.  F
 
 */
 
-/**
- * PROBLEM HERE
- */
 let total = [];
 const pop = zooAnimals.forEach(pop => {
   return total.push(pop.population);
@@ -268,7 +265,13 @@ const populationTotal = total.reduce((currentTotal, finalAnimalTotal) => {
   return finalAnimalTotal += currentTotal;
 });
 
-console.log(populationTotal);
+// cannot get this version to run right just get 5 and console.log([object object]]undefined); //
+// const populationTotal = zooAnimals.reduce((currentTotal, finalAnimalTotal) => {
+//   return finalAnimalTotal += currentTotal.population;
+// });
+
+
+//console.log(populationTotal);
 
 
 /* 
