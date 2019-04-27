@@ -1,27 +1,13 @@
 // 1. Copy and paste your prototype in here and refactor into class syntax.
-function CuboidMaker(cube) {
-    this.length = cube.length;
-    this.width = cube.width;
-    this.height = cube.height;
-}
-
 class CuboidMaker {
     constructor(cube) {
         this.length = cube.length;
         this.width = cube.width;
         this.height = cube.height;
     }
-
-}
-
-
-/* == Step 2: Volume Method ==
-  Create a method using CuboidMaker's prototype that returns the volume of a given cuboid's length, width, and height
-  
-  Formula for cuboid volume: length * width * height
-*/
-CuboidMaker.prototype.volume = function () {
-    return this.length * this.width * this.height;
+    volume() {
+        return this.length * this.width * this.height;
+    }
 }
 
 /* == Step 3: Surface Area Method ==
