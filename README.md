@@ -38,6 +38,9 @@ A method is called inside of an object, a funtion is not.
 
 3. What is closure?
 
+closure is bascially an inner scope that an outer scope around it but does not have access too the inner scope while the inner scope has
+access to the outer scope.
+
 4. Describe the four rules of the 'this' keyword.
 
 5. Why do we need super() in an extended class?
