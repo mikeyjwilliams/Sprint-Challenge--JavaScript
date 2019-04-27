@@ -24,11 +24,14 @@ function multiply(multiple1, multiple2) {
   return multiple1 * multiple2;
 }
 
+function greeting(firstName, lastName) {
+  return `Hello ${firstName} ${lastName}, nice to meet you!`;
+}
 
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
 //consume(2, 2, add); // 4
-console.log(consume(10, 16, multiply)); // 160
-console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice to meet you!
+consume(10, 16, multiply); // 160
+consume("Mary", "Poppins", greeting); // Hello Mary Poppins, nice to meet you!
 
 
 // ==== Closures ==== 
