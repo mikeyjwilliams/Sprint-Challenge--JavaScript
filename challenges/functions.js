@@ -39,7 +39,12 @@ consume("Mary", "Poppins", greeting); // Hello Mary Poppins, nice to meet you!
 // Explain in your own words why `nestedfunction()` can access the variable `internal`.
 
 // Explanation: 
-
+/**
+ *  nestedFunction() can acces the variable `internal` due scoping rules. It was assigned outside of the function then called inside closure scope 
+ *  looks first inside its own scope, if it cannot find it... it then moves on to the scope out from it and keep repeating outward until it finds the 
+ *  variable(let, const, var, etc) it is looking for or errors. Now the other side is it cannot look inward on scopes so if this was reversed it would
+ *  have an issue.
+ */
 
 const external = "I'm outside the function";
 
