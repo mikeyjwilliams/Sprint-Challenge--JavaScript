@@ -36,20 +36,20 @@ const velociraptor = {
 // Using your dinosaur objects, log answers to these questions:
 
 // How much did tyrannosaurus weigh?
-console.log(tyrannosaurus.weight);
+//console.log(tyrannosaurus.weight);
 
 // What was the diet of a velociraptor?
-console.log(velociraptor.diet);
+//console.log(velociraptor.diet);
 
 // How long was a stegosaurus?
-console.log(stegosaurus.length);
+//console.log(stegosaurus.length);
 
 // What time period did tyrannosaurus live in?
-console.log(tyrannosaurus.period);
+//console.log(tyrannosaurus.period);
 
 
 // Create a new roar method for the tyrannosaurus.  When called, return "RAWERSRARARWERSARARARRRR!" Log the result.
-console.log(tyrannosaurus.roar());
+//console.log(tyrannosaurus.roar());
 
 
 // ==== Arrays ====
@@ -126,7 +126,7 @@ for (let i = 0; i < graduates.length; i++) {
   universities.push(graduates[i].university);
 }
 universities.sort()
-console.log(universities)
+//console.log(universities)
 
 /* Request 2: Create a new array called contactInfo that contains both first name and email of each student. 
 
@@ -138,7 +138,7 @@ const contactInfo = [];
 for (let i = 0; i < graduates.length; i++) {
   contactInfo.push(`${graduates[i].first_name} ${graduates[i].email}`);
 }
-console.log(contactInfo);
+//console.log(contactInfo);
 
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called uni that contains them all. Log the result. */
@@ -148,7 +148,7 @@ for (let i = 0; i < graduates.length; i++) {
     uni.push(graduates[i].university);
   }
 }
-console.log(uni);
+//console.log(uni);
 
 
 // ==== ADVANCED Array Methods ====
@@ -227,7 +227,7 @@ const animalNames = [];
 zooAnimals.forEach(name => {
   animalNames.push(`Name: ${name.animal_name}, Scientific: ${name.scientific_name}`);
 });
-console.log(animalNames);
+//console.log(animalNames);
 
 /* Request 2: .map()    
 
@@ -240,7 +240,7 @@ lowerCase = zooAnimals.map(toLower => {
   return toLower.animal_name.toLowerCase();
 })
 
-console.log(lowerCase);
+//console.log(lowerCase);
 
 /* Request 3: .filter() 
 
@@ -249,7 +249,7 @@ The zoos are concenred about animals with a lower population count. Find out whi
 */
 let smallerPopulation = [];
 smallerPopulation = zooAnimals.filter(animalPop => (animalPop.population < 5));
-console.log(smallerPopulation);
+//console.log(smallerPopulation);
 
 /* Request 4: .reduce() 
 
@@ -263,7 +263,7 @@ The zoos need to know their total animal population across the United States.  F
 let populationTotal = 0;
 populationTotal = zooAnimals.reduce(animalCount => (
   animalCount += animalCount.population));
-console.log(populationTotal);
+//console.log(populationTotal);
 
 
 /* 
