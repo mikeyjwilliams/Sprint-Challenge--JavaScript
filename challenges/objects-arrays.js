@@ -260,10 +260,15 @@ The zoos need to know their total animal population across the United States.  F
 /**
  * PROBLEM HERE
  */
-let populationTotal = 0;
-populationTotal = zooAnimals.reduce(animalCount => (
-  animalCount += animalCount.population));
-//console.log(populationTotal);
+let total = [];
+const pop = zooAnimals.forEach(pop => {
+  return total.push(pop.population);
+})
+const populationTotal = total.reduce((currentTotal, finalAnimalTotal) => {
+  return finalAnimalTotal += currentTotal;
+});
+
+console.log(populationTotal);
 
 
 /* 
