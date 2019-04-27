@@ -20,6 +20,9 @@ function add(num1, num2) {
   return num1 + num2;
 }
 
+function multiply(multiple1, multiple2) {
+  return multiple1 * multiple2;
+}
 
 
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
