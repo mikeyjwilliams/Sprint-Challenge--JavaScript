@@ -43,7 +43,14 @@ access to the outer scope.
 
 4. Describe the four rules of the 'this' keyword.
 
+
+ - the global scope be bound to the window object(all of javascript) or global object.
+ - implicit this, be bound to the left of the dot binds `this` e.g ```(what will bind to).implicitBinding();```
+ - explicit binding, use a function to bind the `this` keyword. such as `.call`, `.apply`, and `.bind`.
+
 5. Why do we need super() in an extended class?
+
+Without `super()` in an extended class we would not be able to gain the properties from the given extended class.
 
 ## Project Set up
 
