@@ -1,24 +1,37 @@
 // ==== Callbacks ====  
 
 /* Step 1: Create a higher-order function that accepts a callback
-  * Create a higher-order function named consume that can take 3 parameters.
-  * The first two parameters can accept any argument
-  * The last parameter accepts a callback 
-  * In the body of the function return the callback with the two parameters that you created
-*/
+ * Create a higher-order function named consume that can take 3 parameters.
+ * The first two parameters can accept any argument
+ * The last parameter accepts a callback 
+ * In the body of the function return the callback with the two parameters that you created
+ */
+function consume(itemOne, itemTwo, cb) {
+  return cb(itemOne, itemTwo);
+}
 
 
 /* Step 2: Create several functions to callback with consume();
-  * Create a function named add that returns the sum of two numbers
-  * Create a function named multiply that returns the product of two numbers 
-  * Create a function named greeting that accepts a first and last name and returns "Hello first-name last-name, nice to meet you!"
-*/
+ * Create a function named add that returns the sum of two numbers
+ * Create a function named multiply that returns the product of two numbers 
+ * Create a function named greeting that accepts a first and last name and returns "Hello first-name last-name, nice to meet you!"
+ */
+function add(num1, num2) {
+  return num1 + num2;
+}
 
+function multiply(multiple1, multiple2) {
+  return multiple1 * multiple2;
+}
+
+function greeting(firstName, lastName) {
+  return `Hello ${firstName} ${lastName}, nice to meet you!`;
+}
 
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
-// consume(2,2,add); // 4
-// consume(10,16,multiply); // 160
-// consume("Mary","Poppins", greeting); // Hello Mary Poppins, nice to meet you!
+//consume(2, 2, add); // 4
+consume(10, 16, multiply); // 160
+consume("Mary", "Poppins", greeting); // Hello Mary Poppins, nice to meet you!
 
 
 // ==== Closures ==== 
@@ -26,7 +39,12 @@
 // Explain in your own words why `nestedfunction()` can access the variable `internal`.
 
 // Explanation: 
-
+/**
+ *  nestedFunction() can acces the variable `internal` due scoping rules. It was assigned outside of the function then called inside closure scope 
+ *  looks first inside its own scope, if it cannot find it... it then moves on to the scope out from it and keep repeating outward until it finds the 
+ *  variable(let, const, var, etc) it is looking for or errors. Now the other side is it cannot look inward on scopes so if this was reversed it would
+ *  have an issue.
+ */
 
 const external = "I'm outside the function";
 

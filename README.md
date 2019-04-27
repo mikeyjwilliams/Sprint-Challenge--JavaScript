@@ -30,13 +30,26 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+`.forEach` mutates the given array, while `.map` does not mutate and gives a new array back.
+
 2. What is the difference between a function and a method?
+
+A method is called inside of an object, a funtion is not.
 
 3. What is closure?
 
+closure is bascially an inner scope that an outer scope around it but does not have access too the inner scope while the inner scope has
+access to the outer scope.
+
 4. Describe the four rules of the 'this' keyword.
 
+- the global scope be bound to the window object(all of javascript) or global object.
+- implicit this, be bound to the left of the dot binds `this` e.g ```(what will bind to).implicitBinding();```
+- explicit binding, use a function to bind the `this` keyword. such as `.call`, `.apply`, and `.bind`.
+
 5. Why do we need super() in an extended class?
+
+Without `super()` in an extended class we would not be able to gain the properties from the given extended class.
 
 ## Project Set up
 
@@ -70,15 +83,15 @@ Test your knowledge of objects and arrays.
 
 ## Task 2: Functions
 This challenge takes a look at callbacks and closures as well as scope. 
-* [ ] Use the [functions.js](challenges/functions.js) link to get started. Read the instructions carefully!
+* [x] Use the [functions.js](challenges/functions.js) link to get started. Read the instructions carefully!
 
 ## Task 3: Prototypes
 Create constructors, bind methods, and create cuboids in this prototypes challenge.
-* [ ] Use the [prototypes.js](challenges/prototypes.js) link to get started. Read the instructions carefully!
+* [x] Use the [prototypes.js](challenges/prototypes.js) link to get started. Read the instructions carefully!
 
 ## Task 4: Classes
 Once you have completed the prototypes challenge, it's time to convert all your hard work into classes.
-* [ ] Use the [classes.js](challenges/classes.js) link to get started. Read the instructions carefully!
+* [x] Use the [classes.js](challenges/classes.js) link to get started. Read the instructions carefully!
 
 In your solutions, it is essential that you follow best practices and produce clean and professional results. Schedule time to review, refine, and assess your work and perform basic professional polishing including spell-checking and grammar-checking on your work. It is better to submit a challenge that meets MVP than one that attempts too much and does not.
 
